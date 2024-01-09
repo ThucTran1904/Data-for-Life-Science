@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block content %}
+<section>
+  <div class="">
+    <div class="card shadow-lg p-3 mb-5 bg-body rounded text-center">
+      <h5 class="card-header">Welcome to Heart Disease Prediction</h5>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">
+          The human heart has hidden treasures, In secret kept, in silence
+          sealed; The thoughts, the hopes, the dreams, the pleasures, Whose
+          charms were broken if revealed.
+        </p>
+        <a href="{{ url_for('Home') }}" class="btn btn-primary">Home</a>
+        <a href="{{ url_for('Index') }}" class="btn btn-info">Predict</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block content %}
+<section>
+  <div class="ml-container form-container">
+    <div class="results">
+      {% if prediction==1 %}
+      <h1>
+        <span class="danger">Oops!<br /><br />You have HEART DISEASE.</span>
+      </h1>   
+      {% elif prediction==0 %}
+      <h1>
+        <span class="safe"
+          >Congratulation!<br /><br />
+          You DON'T have HEART DISEASE.</span
+        >
+      </h1>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}
